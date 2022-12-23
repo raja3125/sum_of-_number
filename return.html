@@ -1,0 +1,23 @@
+<!Doctype html>
+<html>
+<head>
+</head>
+<body>
+	<script>
+		function call(n){
+    var digit, c = 0, result = 0
+
+    while( n >0 ){
+        digit = n % 10 
+        result = (result * 10) + digit 
+		c = c+digit
+        n = (n-digit)/10 
+    }  
+    return c
+	} 
+	alert(
+	  call( + prompt("Enter a value") )
+	)
+	</script>
+</body>
+</html>
